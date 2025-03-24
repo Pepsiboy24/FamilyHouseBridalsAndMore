@@ -1,8 +1,8 @@
 /* Product display and product card */
 .productDispaly{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 20px;
     width: 100%;
     padding: 20px;
     /* max-width: 1200px; */
