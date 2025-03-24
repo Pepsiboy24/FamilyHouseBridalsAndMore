@@ -234,7 +234,7 @@ marquee img{
 
 @media screen and (max-width: 425px){
     .about{
-        height: 100%;
+        /* height: 100%; */
         flex-direction: column;
         overflow: hidden;
     }
