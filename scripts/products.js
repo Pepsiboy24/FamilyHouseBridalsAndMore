@@ -2,15 +2,15 @@ const template = document.querySelector("[data-template]")
 const cardHolder = document.querySelector("[data-cardHolder]")
 
 const arr = [
-    {name: "name", price: 12, img: "../assets/img1.jpg"},
-    {name: "name1", price: 12, img: "../assets/img2.jpg"},
-    {name: "name2", price: 12, img: "../assets/img3.jpg"},
-    {name: "name3", price: 12, img: "../assets/img4.jpg"},
-    {name: "name4", price: 12, img: "../assets/img5.jpg"},
-    {name: "name5", price: 12, img: "../assets/img6.jpg"},
-    {name: "name5", price: 12, img: "../assets/img7.jpg"},
-    {name: "name5", price: 12, img: "../assets/img8.jpg"},
-    {name: "name5", price: 12, img: "../assets/img9.jpg"}
+    {name: "name", price: 12, img: "../assets/imgs/compressed_img1.jpg"},
+    {name: "name1", price: 12, img: "../assets/imgs/compressed_img2.jpg"},
+    {name: "name2", price: 12, img: "../assets/imgs/compressed_img3.jpg"},
+    {name: "name3", price: 12, img: "../assets/imgs/compressed_img4.jpg"},
+    {name: "name4", price: 12, img: "../assets/imgs/compressed_img5.jpg"},
+    {name: "name5", price: 12, img: "../assets/imgs/compressed_img6.jpg"},
+    {name: "name5", price: 12, img: "../assets/imgs/compressed_img7.jpg"},
+    {name: "name5", price: 12, img: "../assets/imgs/compressed_img8.jpg"},
+    {name: "name5", price: 12, img: "../assets/imgs/compressed_img1.jpg"}
 ]
 productDispaly(arr, template, cardHolder)
 

@@ -1,3 +1,9 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
 /* Product display and product card */
 .productDispaly{
     display: grid;
@@ -9,7 +15,7 @@
     
 }
 .productDispaly > .productCard{
-    height: 300px;
+    height: 200px;
     /* width: 220px; */
     border: 1px solid #06d6a0;
     border-color: #ba5a93;
@@ -22,7 +28,7 @@
 }
 .productCard .image{
     width: 100%;
-    height: 80%;
+    height: 75%;
 }
 .productCard .image img{
     width: 100%;
@@ -32,19 +38,26 @@
 .productCard .description{
     display: flex;
     justify-content: space-between;
-    padding: 7px;
+    align-items: center;
+    padding: 0 7px 7px 7px;
+    color: #4d1831; 
     align-items: center;
 }
-.productCard .description .addToCartBtn{
+.productCard p {
+    /* text-align: center; */
+    font-size: 14px;
+    color: #555; /* Neutral color for price */
+    font-weight: 600;
+    margin-top: 3px;
+}
+.productCard .description .addToCartBtn .btn{
     color: #ff0000;
     position: absolute;
     bottom: 70px;
     right: 5px;
-}
-.productCard .description .addToCartBtn .btn{
     width: 30px;
     height: 30px;
-    background: #06d6a0;
+    background: #4d1831;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,6 +69,7 @@
 /* Maincontent */
 main{
     position: relative;
+    flex: 1;
 }
 aside{
     padding: 20px;
