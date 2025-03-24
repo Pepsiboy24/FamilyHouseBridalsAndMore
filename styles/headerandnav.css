@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    width: 100%;
+    height: 110px;
+    background-color: #4d1831;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+header > label{
+    width: 100px;
+    height: 100px 
+}
+header > label > img{
+    width: 100%;
+    height: 100%
+}
+
+.search-box, .responsiveSearch {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.search-box input, .input input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    background: none;
+}
+.input input{
+    /* display: none; */
+    /* width: 100%;
+    height: 100%; */
+    background: #fff;
+    /* z-index: 1111; */
+}
+.input{
+    display: none;
+    align-items: center;
+    background: #fff;
+    padding: 8px 15px;
+    /* border-radius: 20px; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1111;
+    background-color: #4d1831;
+    left: 0;
+    top: 0;
+}
+.search-box i, .responsiveSearch i{
+    color: #555;
+    cursor: pointer;
+}
+.responsiveSearch{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: #000;
+    font-size: 20px;
+    /* position: absolute;
+    right: 25%; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+header > .acctCreationBox > .acctCreation > .icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #000;
+    font-size: 2rem;
+    z-index: 1111;
+}
+header > .acctCreationBox > .acctCreation > .icon{
+    z-index: 1111;
+}
+
+/* NAvBar styles */
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    /* flex: center; */
+    justify-content: center;
+    align-items: center;
+    position: sticky;;
+    top: 0;
+    z-index: 999;
+}
+nav.sticky{
+    position: sticky;
+    top: 0;
+}
+nav .cartOpenBtn{
+    position: absolute;
+    right: 10px;
+}
+nav .cartOpenBtn .icon{
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 6px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+
+
+
+/* 
+@media screen and (max-width: 425px) {
+    header label, header .searchBoxes,  header .acctCreationBox{
+        width: 30%;
+    }
+    .search-box {
+        display: none;
+    }
+    .responsiveSearch{
+       
+        display: flex;
+        
+    }
+
+} */

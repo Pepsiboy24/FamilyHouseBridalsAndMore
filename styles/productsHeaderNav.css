@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* NAvBar styles */
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    /* flex: center; */
+    position: sticky;;
+    top: 0;
+    z-index: 999;
+}
+nav.sticky{
+    position: sticky;
+    top: 0;
+}
+.nav{
+    display: flex;
+    height: 50px;
+    /* flex: center; */
+    justify-content: center;
+    align-items: center; 
+}
+.filter{
+    width: 100%;
+    height: 50px;
+    background-color: #f8f0f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #4d1831;
+}
+/* FilterStyles */
+.searchBar{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    width: 250px;
+}
+.searchBar input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    background: none;
+}
+.searchBar .fa-search{
+    /* color: #555; */
+    cursor: pointer;
+}
+.filterIcon{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.filter .item{
+    padding: 10px;
+    border: 1px solid #4d1831;
+    color: #555;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+nav .cartOpenBtn{
+    position: absolute;
+    right: 10px;
+}
+nav .cartOpenBtn .icon{
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 6px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+.disp{
+    display: flex;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 400px; */
+    background-color: #4d1831;
+    color: white;
+}
+footer .top{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+}
+.icons, footer .top .call, footer .btm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+footer .top .icons .icon{
+    font-size: 2.5rem;
+    margin: 10px;
+}
+footer .top .call p{
+    font-size: 1.25rem;
+}
+footer .btm{
+    padding: 20px;
+}
