@@ -17,7 +17,8 @@ Todo
     <link rel="stylesheet" href="../styles/products.css">
     <link rel="stylesheet" href="../styles/headerandnav.css">
     <link rel="stylesheet" href="../styles/productsHeaderNav.css">
-    <script src="../scripts/products.js" defer></script>
+    <script src="../scripts/cardDisplay.js" defer type="module"></script>
+    <script src="../scripts/products.js" defer type="module"></script>
     <script src="../scripts/font-awesome.js"></script>
 </head>
 <body>
@@ -51,14 +52,15 @@ Todo
             </div>
        </div>
        <section class="filter">
+           <div class="filterIcon" data-FilterItemsBtn>
+            <i class="fa fa-filter"></i>
+        </div>
         <div class="searchBar">
             <input type="text">
             <i class="fa fa-search"></i>
         </div>
-        <div class="filterIcon">
-            <i class="fa fa-filter"></i>
-        </div>
-            <!-- <div class="item">
+        <div class="filterItems" data-filterList>
+            <div class="item">
                 <p>Skin</p>
             </div>
             <div class="item">
@@ -69,7 +71,8 @@ Todo
             </div>
             <div class="item">
                 <p>Bridals</p>
-            </div> -->
+            </div>
+        </div>
        </section>
     </nav>
 

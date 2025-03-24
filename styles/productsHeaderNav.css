@@ -34,6 +34,7 @@ nav{
     justify-content: space-between;
     padding: 10px;
     color: #4d1831;
+    position: relative;
 }
 /* FilterStyles */
 .searchBar{
@@ -59,17 +60,39 @@ nav{
 .filterIcon{
     font-size: 20px;
     cursor: pointer;
+    z-index: 111;
 }
+.filterItems{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    /* display: flex; */
+    flex-direction: column;
+    width: 140px;
+    min-height: 100%;
+    padding: 20px;
+    border-radius:5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* padding-top: 60px; */
+    background-color: #4d1831;
+}
+.show{
+    display: flex;
+}
+
 
 .filter .item{
     padding: 10px;
     border: 1px solid #4d1831;
-    color: #555;
+    border-color: #ba5a93;
+    color: #fff;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
+    margin: 5px
 }
 .disp{
     display: flex;
@@ -105,6 +128,7 @@ footer .top .call p{
 footer .btm{
     padding: 20px;
 }
+
 
 @media screen and (max-width: 425px){
     .searchBar {
